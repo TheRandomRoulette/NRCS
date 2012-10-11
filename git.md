@@ -23,6 +23,7 @@ Once you have an account on github, click on the "Create A New Repo" button in t
 
 ## Pulling Down Your Repository to your Computer
 The key you created in the "Initial Setup" steps above gives your computer permission to send and receive data to and from your repositories on github. Use the following steps to pull down your repository
+
 1.  type `cd ~/Documents` to get to your documents folder
 2.  type `git clone git@github.com:[your git-username]/[repositoryname].git`, which will create a local folder with your repository name
 3.  type `cd [repositoryname]`
