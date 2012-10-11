@@ -1,4 +1,3 @@
 # New Roots Programming Class
 
-[Git Instructions](/newroots/git.md)
-[Terminal Tips](/newroots/terminal.md)
+Click filename above to get relevant instructions

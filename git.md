@@ -1,4 +1,4 @@
-[Back](/newroots)
+[Back](/a-fro/newroots)
 # Instructions for Using Git
 **Note that you need to sign up for a free account at github if you have not already done so**
 
@@ -26,7 +26,7 @@ The key you created in the "Initial Setup" steps above gives your computer permi
 1.  type `cd ~/Documents` to get to your documents folder
 2.  type `git clone git@github.com:[your git-username]/[repositoryname].git`, which will create a local folder with your repository name
 3.  type `cd [repositoryname]`
-4.  open sublime [installation instructions here](/newroots/sublime.md) or the program that you use for your programming environment (ie. Scratch) and begin working
+4.  open sublime [installation instructions here](/a-fro/newroots/blob/master/sublime.md) or the program that you use for your programming environment (ie. Scratch) and begin working
 
 ## Pushing your Changes Up to Github
 Before the end of each day, and better, throughout your work, you should commit your changes and push them to github.
