@@ -1,3 +1,4 @@
 # New Roots Programming Class
 
-[Git instructions](git.md)
+[Git Instructions](/newroots/git.md)
+[Terminal Tips](/newroots/terminal.md)
