@@ -1,5 +1,6 @@
+[Back](/newroots)
 # Instructions for Using Git
-** Note that you need to sign up for a free account at github if you have not already done so **
+**Note that you need to sign up for a free account at github if you have not already done so**
 
 ## Initial Setup Each Week
 1.  Open up terminal on your computer (in Applications/Utilities)
@@ -21,22 +22,18 @@
 Once you have an account on github, click on the "Create A New Repo" button in the top right. Create a public repo, with whatever name you choose, and also click the "Initialize this repository with a readme" checkbox before clicking the "Create Repository" button.
 
 ## Pulling Down Your Repository to your Computer
-The key you created in the "Initial Setup" steps above gives your computer permission to send and receive data to and from your repositories on github. 
+The key you created in the "Initial Setup" steps above gives your computer permission to send and receive data to and from your repositories on github. Use the following steps to pull down your repository
+1.  type `cd ~/Documents` to get to your documents folder
+2.  type `git clone git@github.com:[your git-username]/[repositoryname].git`, which will create a local folder with your repository name
+3.  type `cd [repositoryname]`
+4.  open sublime [installation instructions here](/newroots/sublime.md) or the program that you use for your programming environment (ie. Scratch) and begin working
 
 ## Pushing your Changes Up to Github
+Before the end of each day, and better, throughout your work, you should commit your changes and push them to github.
 
-
-## Terminal Tips
-
-### Tab Completion
-Any time you hit the tab button while typing in terminal, the system will try and auto-complete what you are typing. For example, let's say you create a folder called "myprojectwithareallylongname". Try it now:
-1.  type `cd ~` to go to your home directory
-2.  type `mkdir myprojectwithareallylongname`, which creates a folder called myprojectwithareallylongname
-3.  type `cd  mypro`, then hit tab, and you'll see tab completion at work
-
-### Usefull Commands
-- `ls` gives you a list of all the folders and files in the current directory
-- `ls -a` gives you a list of all the folders and files in the current directory, including the hidden files and folders
-- `cd` allows you to change the directory and move around the file system
-- `mkdir foldername` creates a folder with the foldername in the current directory
-- `touch filename.txt` creates a file with the name and extension you specify
+1.  Type `git status` from within your project folder to see the current status of your repository
+2.  If there are "untracked files" (files that you have created but not yet added to the repository), add them using `git add [filename]`
+3.  Typing `git status` again will tell you there are changes staged to be committed
+4.  Commit your changes to the repository, typing `git commit -m "A message about the details of the commit here"`. The -m stands for message, which is followed by the message in the quotations.
+5.  At this point `git status` will tell you your local branch is ahead of master by 1 commit (or more, if you've committed multiple times without pushing)
+6.  type `git push origin master`. "Origin" is the name of the remote location, in this case, github. You can see a list of remotes by typing `git remote -v`. "Master" refers to the name of the current branch you are working on. Therefore, "git push origin master" is an instruction to push the committed changes from your local master branch up to the master branch on github. 
